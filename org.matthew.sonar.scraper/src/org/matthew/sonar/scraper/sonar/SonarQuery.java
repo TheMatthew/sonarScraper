@@ -19,7 +19,7 @@ package org.matthew.sonar.scraper.sonar;
 
 public class SonarQuery {
 	boolean maxResultsReached;
-	Paging info;
+	Paging paging;
 	Issue[] issues;
 	
 	public static class Paging{

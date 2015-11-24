@@ -61,7 +61,7 @@ public class test {
 			}
 			issues.addAll(Arrays.asList(sq.issues));
 			page++;
-		} while (!sq.maxResultsReached && sq.issues.length != 0);
+		} while (sq.paging.getPages() > sq.paging.getPageIndex() && sq.issues.length != 0);
 		File file = new File("sonar.csv");
 		try (BufferedWriter bw = new BufferedWriter(new FileWriter(file))) {
 			bw.write(Issue.getHeader());
