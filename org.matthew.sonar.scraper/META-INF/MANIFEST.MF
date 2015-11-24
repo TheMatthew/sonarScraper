@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Scraper
+Bundle-SymbolicName: org.matthew.sonar.scraper
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.matthew.sonar.scraper.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: com.google.gson;version="2.2.4",
+ com.google.gson.annotations;version="2.2.4",
+ com.google.gson.reflect;version="2.2.4",
+ com.google.gson.stream;version="2.2.4"
